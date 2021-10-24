@@ -1,0 +1,116 @@
+<x-app-layout>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <section class="py-1 bg-blueGray-50">
+        <div class="w-full xl:w-8/8 mb-12 xl:mb-0 px-4 mx-auto mt-8">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">
+            
+            <div class="rounded-t mb-0 px-4 py-3 border-0">
+                <div class="flex flex-wrap items-center">
+                    <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                        <h3 class="font-semibold text-base text-blueGray-700">REGISTRO DE EMPLEADOS</h3>
+                    </div>
+                
+                    <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                        <input type="text" class="text-gray text-sm uppercase px-3 py-1 rounded border-2 border-gray mr-1 mb-1" placeholder="&#xF002; buscar" style="font-family:Arial,FontAwesome" />
+                    </div>
+                
+                    <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                        <button class="bg-indigo-500 text-white active:bg-indigo-600 text-sm font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                            <i class="fas fa-user-plus"></i>
+                            Nuevo
+                        </button>
+                    </div>
+                </div>
+            </div>
+<br>
+            <div class="block w-full overflow-x-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <form action="">
+                                @csrf
+
+                                <div class="form-group">
+                                    <input type="file" name="archivo" id="archivo" accept="image/*" >
+                                </div>
+
+                                <br>
+
+                                <button class="bg-indigo-500 text-white active:bg-indigo-600 text-sm font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                    Subir
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <br>
+        
+            <div class="block w-full overflow-x-auto">
+              <table class="items-center bg-transparent w-full border-collapse ">
+                <thead>
+                  <tr>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Número
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Foto
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Fecha de Alta
+                    </th>
+                   <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                       Nombre
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        DPI
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Empresa
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Puesto
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Teléfono
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Dirección
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Afiliación
+                    </th>
+                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                        Acciones
+                    </th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos id aut repellat exercitationem iste ducimus nobis vitae enim non harum, soluta nihil error veritatis unde vero nam quaerat modi rerum.</td>
+                        <td>Suscipit repudiandae quas explicabo, consequatur debitis nulla provident quidem vel praesentium omnis et neque ratione tempora iure, dolores tempore! Explicabo repellendus dolores quam dolore nobis! Tempora aut error non similique?</td>
+                        <td>Excepturi et quisquam sed eligendi nisi iste nostrum ex corporis hic quam porro pariatur eos expedita repudiandae labore nemo quasi doloribus, laborum obcaecati eum. Veniam ullam eveniet ipsam obcaecati architecto.</td>
+                        <td>Explicabo, mollitia, officia ducimus commodi maiores delectus corporis facere similique asperiores necessitatibus dolorum recusandae est harum tempora quasi voluptatum praesentium reprehenderit quos repellendus eaque, reiciendis animi! Excepturi adipisci quaerat nihil?</td>
+                        <td>Eius repellat tenetur et necessitatibus animi modi hic, est culpa explicabo obcaecati quae quod id sit cum inventore eveniet fuga adipisci aspernatur itaque earum rem! Dicta deserunt modi reiciendis ratione?</td>
+                        <td>Deleniti eum adipisci culpa fugit dolorem ab soluta, quam harum at magni doloremque natus dicta. At voluptatibus, tempore officia fugit inventore quas quis, qui, ipsum accusamus corrupti neque dolores aspernatur.</td>
+                        <td>Repellat molestias quaerat mollitia quidem dolor sint! Obcaecati vitae dolores facere ipsam dignissimos aspernatur distinctio? Asperiores reiciendis omnis qui molestias aperiam quam quaerat tempora, placeat est in, ratione delectus iure.</td>
+                        <td>Tenetur, amet. Similique maiores eius fugiat unde accusantium ullam quam impedit error, praesentium, quo expedita at rerum fugit cum exercitationem officiis architecto laborum. Ad expedita iure amet quo, minus dicta.</td>
+                        <td>Pariatur sit temporibus earum ab tempore, nemo minima aspernatur culpa reprehenderit quam recusandae quisquam suscipit similique, error qui? Quia nulla soluta non numquam perspiciatis ipsum. Tempore ad expedita aperiam dolore?</td>
+                        <td>Soluta amet in tempore ipsa voluptas, laborum adipisci facilis reprehenderit rem deleniti magnam dolorem corporis asperiores sunt numquam perspiciatis porro libero enim consequatur sequi, beatae dolorum, ex impedit atque! Impedit?</td>
+                        <td>Fugit suscipit inventore mollitia ratione ad quae laboriosam sequi quis, harum reprehenderit iure obcaecati ipsum possimus alias blanditiis facere, eum veniam! Architecto neque ut aut exercitationem itaque! Omnis, voluptatum aliquam.</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+</x-app-layout>
+</div>

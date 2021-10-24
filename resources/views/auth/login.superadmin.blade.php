@@ -1,9 +1,7 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <a href="login">
-                <x-jet-authentication-card-logo />
-            </a>
+            <x-jet-authentication-card-logo />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -34,19 +32,20 @@
                 </label>
             </div>
 
-            <div class="mt-4 flex items-center justify-center">
+            <div class="mt-4">
                 <x-jet-button class="ml-4">
                     {{ __('Ingresar') }}
                 </x-jet-button>
-                
-                {{-- Botón registrase para el superadmin --}}
-                {{-- <x-jet-button class="mt-4">
+
+
+                <x-jet-button class="mt-4">
                     @if (Route::has('register'))
                     <a href="{{ route('register') }}">Registrarse
                     </a>
                     @endif
-                </x-jet-button> --}}
+                </x-jet-button>
     
+                
             </div>
             <div>
                 

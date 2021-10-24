@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Empleados;
+use App\HTTP\Livewire\Empleadodebajas;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
-Route::get('/empleados', function () {
-    return view('empleados');
-})->name('empleados');
+// Route::get('/empleados', function () {
+//     return view('empleados');
+// })->name('empleados');
 
 Route::get('/usuarios', function(){
     return view('usuarios');
@@ -31,8 +33,17 @@ Route::get('/contacto', function(){
 
 
 
+Route::middleware(['auth:sanctum','verified'])->group(function(){
+    Route::get('/empleados', Empleados::class)->name('empleados');
+    Route::get('/empleados-de-baja', Empleadodebajas::class)->name('empleados-de-baja');
+    // Route::get('/usuarios', Usuarios::class)->name('usuarios');
+    // Route::get('/contacto', Contacto::class)->name('contacto');
+    Route::get('/dashboard', function () {
+        return view('dashboard');        
+    })->name('dashboard');
+});
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');

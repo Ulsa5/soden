@@ -238,7 +238,7 @@
                     {{ __('Inicio') }}
                 </x-jet-nav-link>
 
-                <x-jet-nav-link href="{{ route('empleados') }}" :active="request()->routeIs('empleados')">
+                <x-jet-nav-link href="{{ route('empleados') }}" :active="request()->routeIs('empleados','empleados-de-baja')">
                     <i class="fas fa-id-badge px-1"></i>
                     {{ __('Empleados') }}
                 </x-jet-nav-link>

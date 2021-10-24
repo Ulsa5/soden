@@ -17,6 +17,7 @@
         <!-- Scripts -->
         {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/misjs.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -40,7 +41,15 @@
         </div>
 
         @stack('modals')
-
+        
         @livewireScripts
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        {{--Escuchar eventos desde componentes de Livewire--}}
+        <script>
+            Livewire.on('alert',function (){
+                successAlert();
+            })
+        </script>
     </body>
 </html>

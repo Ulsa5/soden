@@ -17,9 +17,7 @@ use App\Http\Livewire\Usuarios;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');        
-})->name('login');
+
 
 
 Route::middleware(['auth:sanctum','verified'])->group(function(){
@@ -30,7 +28,7 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('/dashboard', function () {
         return view('dashboard');        
     })->name('dashboard');
-    // Route::get('/', function () {
-    //     return view('auth.login');        
-    // })->name('login');
+    Route::get('/', function () {
+        return view('auth.login');        
+    })->name('login');
 });

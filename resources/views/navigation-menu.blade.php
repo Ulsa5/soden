@@ -146,7 +146,7 @@
                 {{ __('Usuarios') }}
             </x-jet-responsive-nav-link>
 
-            <x-jet-responsive-nav-link href="{{ route('contacto') }}" :active="request()->routeIs('contacto')">
+            <x-jet-responsive-nav-link href="{{ route('contactos') }}" :active="request()->routeIs('contactos')">
                 <i class="fas fa-info-circle px-1"></i>
                 {{ __('Contacto') }}
             </x-jet-responsive-nav-link>
@@ -248,9 +248,9 @@
                     {{ __('Usuarios') }}
                 </x-jet-nav-link>
 
-                <x-jet-nav-link href="{{ route('contacto') }}" :active="request()->routeIs('contacto')">
+                <x-jet-nav-link href="{{ route('contactos') }}" :active="request()->routeIs('contactos')">
                     <i class="fas fa-info-circle px-1"></i>
-                    {{ __('Contacto') }}
+                    {{ __('Contactos') }}
                 </x-jet-nav-link>
             </div>
         </div>

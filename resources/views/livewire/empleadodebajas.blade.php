@@ -18,7 +18,7 @@
                             <i class="fas fa-user-check"></i>
                             Ver Altas
                         </a>
-                    </div>
+                    {{-- </div>
                     <button onclick="
                     Swal.fire({
                         title: 'Alta Exitosa',
@@ -27,7 +27,7 @@
                         confirmButtonText: 'OK'
                         });">
                     ver alerta
-                    </button>
+                    </button> --}}
 
 
 

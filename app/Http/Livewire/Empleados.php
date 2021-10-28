@@ -9,6 +9,7 @@ use Livewire\WithFileUploads;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use Cloudder;
 
 class Empleados extends Component
 {
@@ -143,6 +144,8 @@ class Empleados extends Component
         $this->limpiarCampos();
         
     }
+
+        
 
     public function borrar($id){
         $empleado = Empleado::findOrFail($id);

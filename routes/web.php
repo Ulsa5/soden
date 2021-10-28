@@ -18,10 +18,10 @@ use App\Http\Livewire\Usuarios;
 */
 
 
-Route::get('/', function () {
-    return view('auth.login');        
-// })->name('auth.login');
-});
+// Route::get('/', function () {
+//     return view('auth.login');        
+// // })->name('auth.login');
+// });
 
 
 
@@ -33,4 +33,8 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('/dashboard', function () {
         return view('dashboard');        
     })->name('dashboard');
+    Route::get('/', function () {
+        return view('auth.login');        
+    // })->name('auth.login');
+    });
 });

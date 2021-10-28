@@ -38,6 +38,7 @@
 
                         <fieldset class="border rounded border-gray-300 p-3">
                             <legend class="text-sm">Datos Personales</legend>
+                            {{ $foto }}
 
                             <div class="grid grid-cols-3 gap-4">
 

@@ -13,7 +13,8 @@ use Cloudder;
 
 class Empleados extends Component
 {
-    public $empleados, $unempleado, $fechadealta, $fechadebaja, $docdpi, $foto, $nombre, $dpi, $empresa, $puesto, $telefono, $direccion, $igss, $id_empleado;
+    public $empleados, $unempleado, $fechadealta, $fechadebaja, $docdpi, $foto, $nombre, 
+    $dpi, $empresa, $puesto, $telefono, $direccion, $igss, $id_empleado;
     public $modalAlta=false, $modalBaja=false, $modalDocumentos=false;
     
     use WithFileUploads;

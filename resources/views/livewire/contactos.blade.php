@@ -11,7 +11,7 @@
                 <div class="mb-1 row-span-1 w-full">
                     <h3 class="font-semibold text-xl text-Gray-700">MANUALES</h3><br>
                     &nbsp;&nbsp;&nbsp;<button onclick="document.getElementById('framemanuales').src='{{ asset('docs/manualdeusuario.pdf') }}'" class="shadow appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="manualdeusuario">MANUAL DE USUARIO</button><br><br>
-                    &nbsp;&nbsp;&nbsp;<button onclick="document.getElementById('framemanuales').src='{{ asset('docs/manualtecnico.pdf') }}'" class="shadow appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="manualtecnico" >MANUAL TÉCNICO</button>
+                    &nbsp;&nbsp;&nbsp;<button onclick="document.getElementById('framemanuales').src='{{ asset('docs/manualtecnico.pdf') }}';" class="shadow appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="manualtecnico" >MANUAL TÉCNICO</button>
                 </div>
                 
                 <div class="mb-1 col-span-1">

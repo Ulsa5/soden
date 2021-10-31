@@ -250,7 +250,7 @@
 
                 <x-jet-nav-link href="{{ route('contactos') }}" :active="request()->routeIs('contactos')">
                     <i class="fas fa-info-circle px-1"></i>
-                    {{ __('Contactos') }}
+                    {{ __('Contacto') }}
                 </x-jet-nav-link>
             </div>
         </div>

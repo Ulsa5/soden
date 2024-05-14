@@ -5,23 +5,31 @@ namespace Database\Seeders;
 use App\Models\Address;
 use App\Models\Attentioncall;
 use App\Models\Bankaccount;
+use App\Models\Bonussalary;
 use App\Models\Comment;
 use App\Models\Congratulation;
 use App\Models\Contract;
 use App\Models\Digecamcredential;
 use App\Models\Digesspcredential;
+use App\Models\Discounts;
 use App\Models\Dpi;
 use App\Models\Drivelicense;
 use App\Models\Employee;
+use App\Models\Extrahours;
 use App\Models\Familiar;
 use App\Models\Firegun;
 use App\Models\Igssaffiliation;
 use App\Models\Insurance;
 use App\Models\Miss;
 use App\Models\Ornatbolet;
+use App\Models\Payrollcomments;
+use App\Models\Penalandpolicials;
 use App\Models\Permission;
 use App\Models\Poligraph;
 use App\Models\Position;
+use App\Models\Salaries;
+use App\Models\Salaryanticipe;
+use App\Models\Salarytype;
 use App\Models\Scanneddocument;
 use App\Models\Suspension;
 use App\Models\Training;
@@ -84,11 +92,14 @@ class DatabaseSeeder extends Seeder
         Ornatbolet::factory(50)->create();
         Scanneddocument::factory(198)->create();
         Dpi::factory(50)->create();
-
-
-
-
-
+        Penalandpolicials::factory(150)->create();
+        Discounts::factory(800)->create();
+        Extrahours::factory(650)->create();
+        Payrollcomments::factory(750)->create();
+        Salarytype::factory(5)->create();
+        Salaries::factory(1500)->create();
+        Bonussalary::factory(725)->create();
+        Salaryanticipe::factory(1001)->create();
 
     }
 }

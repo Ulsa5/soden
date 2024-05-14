@@ -17,6 +17,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('enterprise_id');
 
+            $table->string('employeecode');
             $table->string('name');
             $table->string('surname');
             $table->string('email');

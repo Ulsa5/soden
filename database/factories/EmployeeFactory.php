@@ -18,6 +18,7 @@ class EmployeeFactory extends Factory
     {
         return [
             'enterprise_id' => $this->faker->numberBetween(1,5),
+            'employeecode' => $this->faker->randomNumber(),
             'name' => $this->faker->name(),
             'surname' => $this->faker->name(),
             'email' => $this->faker->email(),
